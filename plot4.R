@@ -2,7 +2,7 @@ df_sub<-read.table("household_power_subset.txt",header = TRUE,sep = ";")
 
 ## plot 4 
 png(filename = "Plot4.png",width = 480,height = 480)
-par(mfrow=c(2,2))
+par(mfrow=c(2,2),mar=c(5,4,5,2)+0.1)
 plot(df_sub$Global_active_power,type = "l",xaxt="n",xlab="",ylab="Global active power(kilowatts)")
 axis(1,at=2900,"Saturday")
 axis(1,at=1450,"Friday")
@@ -26,8 +26,8 @@ legend("topright",legend = c("Sub_metering_1",
        cex = 1,lty = 1)
 
 plot(df_sub$Global_reactive_power,type = "l",xaxt="n",xlab="",ylab="Global_reactive_power")
-axis(1,at=2900,"Saturday")
-axis(1,at=1450,"Friday")
 axis(1,at=0,"Thursday")
+axis(1,at=1450,"Friday")
+axis(1,at=2900,"Saturday")
 
 dev.off()
