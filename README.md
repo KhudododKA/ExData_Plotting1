@@ -57,6 +57,7 @@ functions.
 
 * Note that in this dataset missing values are coded as `?`.
 
+* <span style="color:red"> An updated data with the subset for this assignment in the the **read_data.R**. The plot reproduced here are based on **household_power_subset.txt**</span>
 
 ## Making Plots
 
