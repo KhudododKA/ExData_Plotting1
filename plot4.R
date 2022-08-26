@@ -28,7 +28,6 @@ legend("topright",legend = c("Sub_metering_1",
 plot(df_sub$Global_reactive_power,type = "l",xaxt="n",xlab="",ylab="Global_reactive_power")
 axis(1,at=2900,"Saturday")
 axis(1,at=1450,"Friday")
-dev.off()
 axis(1,at=0,"Thursday")
 
 dev.off()
